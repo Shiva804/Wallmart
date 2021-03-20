@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #d5d3e8;
+}
+
+.main-div {
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+}
+.form-side {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#form-img {
+  height: 100%;
+  width: 300px;
+}
+
+#rn {
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 900;
+  color: rgb(41, 39, 39);
+  font-family: "Poppins";
+}
+
+#bisscom {
+  font-size: 13px;
+
+  line-height: 1.2;
+  font-weight: 500;
+  color: rgb(22, 22, 22);
+  padding-left: 15px;
+  font-family: "Poppins";
+}
+
+.sidebyside {
+  width: 100%;
+  display: flex;
+}
+
+.signup-img-content {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  left: 60px;
+  margin-top: -300px;
+}
+
+.signup-form {
+  width: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.form-input {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input input {
+  width: 80%;
+  height: 40px;
+  border-radius: 2px;
+  border-color: rgb(241, 241, 241);
+  outline: none;
+  text-decoration: none;
+}
+
+input:focus {
+  border: 2px solid rgb(240, 83, 83);
+  transition: 0.2s ease;
+}
+
+.required {
+  color: black;
+}
+
+.signup-form-2 {
+  width: 50%;
+  align-items: center;
+}
+
+.form-radio-group {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-radio-group input {
+  margin-right: 5px;
+}
+
+.label-flex {
+  padding-top: 50px;
+}
+
+.select-list select {
+  width: 75%;
+  margin-left: 20px;
+  height: 40px;
+}
+
+#gender {
+  margin-left: 15px;
+  font-weight: 600;
+  color: black;
+}
+
+.form-submit {
+  display: flex;
+  width: 500px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.submit {
+  width: 120px;
+  height: 45px;
+  display: inline-block;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+
+#submit {
+  background: #329e5e;
+  color: #fff;
+  margin-right: 25px;
+}
+#submit:hover {
+  background-color: #267747;
+}
+
+#reset {
+  background: #fff;
+  color: #c00707;
+  border: 2px solid #c22b2b;
+  outline: none;
+}
+#reset:hover {
+  border: 2px solid #c22b2b;
+  background: #c00707;
+  color: #fff;
+}
+
+label {
+  font-weight: 600;
+  color: black;
+}
+
+@media (max-width: 1170px) {
+  .form-side {
+    display: none;
+  }
+  .main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    margin-top: 10px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .sidebyside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-submit {
+    margin-left: auto;
+  }
+}
